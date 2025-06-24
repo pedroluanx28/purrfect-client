@@ -1,0 +1,29 @@
+.bottom-negative {
+	bottom: -25%;
+}
+
+.left-negative {
+	left: -8%;
+	transform: rotate(45deg);
+}
+
+.right-negative {
+	right: -8%;
+	transform: rotate(-45deg);
+}
+
+.transition {
+    transition: all 90ms ease-in-out;
+}
+
+.button-container:hover .left-negative {
+    left: 2%;
+}
+
+.button-container:hover .right-negative {
+    right: 0;
+}
+
+.button-container:hover .bottom-negative {
+    bottom: 0;
+}

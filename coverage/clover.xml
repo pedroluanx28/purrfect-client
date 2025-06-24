@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1749511348151" clover="3.2.0">
+  <project timestamp="1749511348151" name="All files">
+    <metrics statements="8" coveredstatements="0" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1" elements="12" coveredelements="2" complexity="0" loc="8" ncloc="8" packages="2" files="2" classes="2"/>
+    <package name="src">
+      <metrics statements="8" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="main.tsx" path="C:\dev\purrfect-shop\src\main.tsx">
+        <metrics statements="8" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.routes">
+      <metrics statements="0" coveredstatements="0" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="AppRoutes.tsx" path="C:\dev\purrfect-shop\src\routes\AppRoutes.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      </file>
+    </package>
+  </project>
+</coverage>
