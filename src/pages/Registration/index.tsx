@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-import "./style.css";
 import { RegistrationForm } from "@/components/RegistrationForm";
+
+import "./style.css";
 
 type FormType = "login" | "register";
 
@@ -14,6 +15,10 @@ export function Registration({ formType = "login" }: RegistrationProps) {
 	const [inTransition, setInTransition] = useState(false);
 
 	const isLoginScreen = formTypeValue === "login";
+
+	const loginScreenTranslateStyle = {
+		transform: isLoginScreen ? "translateX(-100%)" : "translateX(100%)"
+	};
 
 	function handleClickLink(formType: FormType) {
 		if (inTransition) {
@@ -40,17 +45,15 @@ export function Registration({ formType = "login" }: RegistrationProps) {
 	}
 
 	return (
-		<div className="d-flex flex-column align-items-center gap-4 justify-content-center p-5 position-relative w-100 h-100vh">
+		<div className="d-flex flex-column align-items-center gap-4 justify-content-center p-5 position-relative w-100 h-100vh background-image">
 			<div
-				className="border rounded p-4 transition-all"
-				style={{
-					transform: isLoginScreen ? "translateX(-100%)" : "translateX(100%)"
-				}}
+				className="border rounded p-4 transition-all bg-white w-25rem"
+				style={loginScreenTranslateStyle}
 			>
 				<div id="form-container">
 					{isLoginScreen ? (
 						<div className="d-flex flex-column gap-3">
-							<RegistrationForm formType="register" />
+							<RegistrationForm />
 							<span>
 								Ainda não tem conta?{" "}
 								<a onClick={() => handleClickLink("register")} className="change-form-link">
@@ -60,7 +63,7 @@ export function Registration({ formType = "login" }: RegistrationProps) {
 						</div>
 					) : (
 						<div className="d-flex flex-column gap-3">
-							<RegistrationForm />
+							<RegistrationForm formType="register" />
 							<span>
 								Já tem uma conta?{" "}
 								<a onClick={() => handleClickLink("login")} className="change-form-link">

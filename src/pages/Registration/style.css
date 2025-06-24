@@ -3,13 +3,20 @@
 }
 
 .fadeInAnimation {
-    animation: fadeIn 0.9s ease-in-out;
+	animation: fadeIn 0.9s ease-in-out;
 }
 
 .change-form-link {
 	color: #007bff;
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+.background-image {
+	background-image: url("./assets/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 }
 
 @keyframes fadeIn {

@@ -1,4 +1,5 @@
 import { ImgHTMLAttributes, ReactNode } from "react";
+
 import classNames from "clsx";
 import { Link } from "react-router";
 
@@ -26,7 +27,7 @@ export function Button({ children, buttonClassName, to = "#" }: ButtonProps) {
 }
 
 function Icon({ width = 50, height = 50, position = "left", ...rest }: IconProps) {
-	const isLeft = position === "left"
+	const isLeft = position === "left";
 
 	return (
 		<div
