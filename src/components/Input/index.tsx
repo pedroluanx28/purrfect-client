@@ -9,13 +9,15 @@ type Props = FormControlProps &
 	BsPrefixProps<"input"> & {
 		controlId?: string;
 		label?: string;
+		errorMessage?: string;
 	};
 
-export function Input({ controlId, label, ...rest }: Props) {
+export function Input({ controlId, label, errorMessage, ...rest }: Props) {
 	return (
 		<Form.Group controlId={controlId}>
 			{label && <Form.Label className="mb-20px-negative">{label}</Form.Label>}
-			<FormControl {...rest} />
+			<FormControl {...rest} className={errorMessage ? "border-danger" : ""} />
+			{errorMessage && <span className="text-danger">{errorMessage}</span>}
 		</Form.Group>
 	);
 }

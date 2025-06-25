@@ -17,7 +17,7 @@ export function Registration({ formType = "login" }: RegistrationProps) {
 	const isLoginScreen = formTypeValue === "login";
 
 	const loginScreenTranslateStyle = {
-		transform: isLoginScreen ? "translateX(-100%)" : "translateX(100%)"
+		transform: isLoginScreen ? "translateX(-60%)" : "translateX(60%)"
 	};
 
 	function handleClickLink(formType: FormType) {
@@ -47,7 +47,7 @@ export function Registration({ formType = "login" }: RegistrationProps) {
 	return (
 		<div className="d-flex flex-column align-items-center gap-4 justify-content-center p-5 position-relative w-100 h-100vh background-image">
 			<div
-				className="border rounded p-4 transition-all bg-white w-25rem"
+				className="border rounded p-4 transition-all bg-white registration-form-container"
 				style={loginScreenTranslateStyle}
 			>
 				<div id="form-container">
